@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monomaniac+One&family=Open+Sans:wght@300&family=Orbitron:wght@400;600&family=Permanent+Marker&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Monomaniac One', sans-serif;
+}
+
+body {
+	background: rgb(94,124,96);
+  background: linear-gradient(90deg, rgb(124, 172, 148) 0%, rgb(179, 219, 189) 35%, rgb(106, 167, 114) 100%);
+    height: 100vh;
+    width:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+	color: #FFF;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	margin-left: 50px;
+	padding-top: 2rem;
+	
+}
+
+main h1 {
+	background-color: #01573a;
+	width: 550px;
+	border-radius: 50px;
+	padding-left: 45px;
+	padding-bottom: 10px;
+	font-size: 4rem;
+	text-transform: capitalize;
+	margin-bottom: 0.5rem;
+	margin-top: 40px;
+	margin-left: 25px;
+	float: left;
+}
+
+main .stroke{
+	-webkit-text-stroke: 1.5px #01573a; /* Untuk browser berbasis WebKit (Chrome, Safari) */
+  text-stroke: 1.5px #008888; /* Standar */
+  color: #fff;
+}
+
+main h1 ~ p {
+	margin-bottom: 2rem;
+	margin-left: 90px;
+	font-size: 1.5rem;
+}
+
+main .create-new {
+	display: flex;
+	justify-content: center;
+	float: left;
+	max-width: 480px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+main .create-new input {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	background-color: transparent;
+	color: #FFF;
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin: 0;
+	transition: 0.4s;
+}
+
+main .create-new input:focus {
+	border-bottom-color: rgb(47, 214, 111);
+}
+
+main .create-new button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: rgb(47, 214, 111);
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+main .tasks {
+	width: 100%;
+	max-width: 480px;
+	margin-top: 2rem;
+	margin-left: 4rem ;
+	display: block;
+	float: right;
+}
+
+main .tasks .task {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(0, 54, 36);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+main .tasks .task .buttons {
+	min-width: fit-content;
+}
+
+main .tasks .task button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: rgb(47, 214, 111);
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+main .tasks .task button.delete {
+	background-color: crimson;
+	color: #EEE;
+}
+
+.tasks .task.is-complete {
+	opacity: 0.7;
+}
+
+.tasks .task.is-complete .content {
+	text-decoration: line-through;
+}
+
+.isi .img{
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	width: 50%;
+	transform: translate(-50%, -50%);
+	z-index: initial;
+}
+
+.pr{
+	background-color: #008888;
+	width: 300px;
+	border-radius: 50px;
+	padding-left: 45px;
+	padding-bottom: 10px;
+	font-size: 4rem;
+	letter-spacing: .25rem;
+	text-transform: capitalize;
+	margin-bottom: 0.5rem;
+	margin-top: 40px;
+	margin-left: 25px;
+	float: left;
+}
+
+.box {
+	font-size: larger;
+	background-color: #01573a;
+	padding: 16px ;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.data-diri {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data-diri li {
+    margin-bottom: 8px;
+}
+
+.smp img{
+	align-items: center	;
+	margin-left: 110%;
+	margin-top: -300px;
+	z-index: unset;
+}
+
+
+
+@media (max-width: 768px) {
+	body {
+	   background-size: cover;
+	   background-attachment: fixed;
+	}
+ 
+	main, main h1, main .create-new, main .tasks {
+	   margin-left: 0;
+	}
+ 
+	.pr {
+	   width: 200px;
+	   font-size: 1rem;
+	}
+ 
+	.box {
+		width: 100%; /* Lebar penuh pada layar besar */
+		max-width: 768px; /* Lebar maksimum pada layar kecil */
+		margin: auto; /* Pusatkan kotak pada layar kecil */
+		padding: 16px;
+		background-color: #01573a;
+		border-radius: 10px;
+		font-size: medium;
+	}
+ 
+	.smp img {
+	   margin-left: 20px;
+	   margin-top: 0;
+	   width: 50vh;
+	}
+ }
+ 
